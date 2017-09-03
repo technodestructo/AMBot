@@ -17,7 +17,7 @@ document.getElementsByTagName('head')[0].appendChild(amBot);
 var GUIsetup = setInterval(initGUI, 1000);
 
 function initGUI() {
-	$("#game").append('<div id="AMBotContainer" style="background-color:#333; width:100px; height:100px; position:absolute; bottom:100px; left:0; z-index:200000000">' +
+	$("#dimensions").append('<div id="AMBotContainer" style="background-color:#333; width:100px; height:100px; position:absolute; bottom:100px; left:0; z-index:200000000">' +
 
 			  '</div>'
 	);
