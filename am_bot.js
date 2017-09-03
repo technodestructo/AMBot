@@ -47,7 +47,7 @@ function startAMBot() {
 	firstDimension = setInterval(clickfirstDimension, 500)
 	doEight = setInterval(clickEight, 500)
 	maxAll = setInterval(clickMaxAll, 50)
-    doSecondSoftReset = setInterval(clickSecondSoftReset, 500)
+	doSecondSoftReset = setInterval(clickSecondSoftReset, 500)
 	doSoftReset = setInterval(clickSoftReset, 500)
 }
 	
