@@ -55,7 +55,7 @@ function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
-    if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions")  && ($("#eightAmount").html() === "71 (1)"))   {
+    if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions")  && ($("#eightAmount").html() === "71 (1)")   {
         doSecondSoftReset = setInterval(clickSecondSoftReset, 250)
     } else {
 	clearInterval(doSecondSoftReset)
