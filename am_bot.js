@@ -43,7 +43,7 @@ function initGUI() {
 
 function startAMBot() {
 	firstDimension = setInterval(clickfirstDimension, 1000)
-	maxAll = setInterval(clickMaxAll, 500)
+	maxAll = setInterval(clickMaxAll, 250)
 	doSoftReset = setInterval(clickSoftReset, 1000)
 	doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
 	doInfinity = setInterval(clickinfinity, 1000)
@@ -74,7 +74,7 @@ function clickSecondSoftReset() {
 }
 
 function clickinfinity() {
-	$("#infinity").click();
+	$("#bigcrunch").click();
 }
 
 //var amBot = document.createElement('script');
