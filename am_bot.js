@@ -38,18 +38,8 @@ function initGUI() {
 	clearInterval(GUIsetup);
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:30px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-104px; margin-right:-63px; font-family:Helvetica; font-size:20pt;">AMBot</p>');
+	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-104px; margin-right:-63px; font-family:Helvetica; font-size:20pt;">AMBotv1</p>');
 }
-
-/*
-function startAMBot() {
-	firstDimension = setInterval(clickfirstDimension, 1000)
-	maxAll = setInterval(clickMaxAll, 250)
-	doSoftReset = setInterval(clickSoftReset, 5000)
-	doSecondSoftReset = setInterval(clickSecondSoftReset, 5000)
-	doInfinity = setInterval(clickinfinity, 5000)
-}
-*/
 
 function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
@@ -57,7 +47,7 @@ function startAMBot() {
 	maxAll = setInterval(clickMaxAll, 250)
     doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
 	doSoftReset = setInterval(clickSoftReset, 1000)
-	}
+}
 	
 
 function stopAMBot() {
@@ -76,20 +66,20 @@ function clickMaxAll() {
 	$("#maxall").click();
 }
 
-function clickSoftReset() {
-	$("#softReset").click();
-}
-
 function clickSecondSoftReset() {
 	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#secondSoftReset").click();
 	}
 }
 
-function clickinfinity() {
-	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {
-		$("#bigcrunch").click();
+function clickSoftReset() {
+	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {	
+		$("#softReset").click();
 	}
+}
+
+function clickinfinity() {
+	$("#bigcrunch").click();
 }
 
 //var amBot = document.createElement('script');
