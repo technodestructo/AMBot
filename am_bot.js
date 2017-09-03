@@ -62,7 +62,7 @@ function clickfirstDimension() {
 }
 
 function clickMaxAll() {
-	$("#maxAll").click();
+	$("#maxall").click();
 }
 
 function clickSoftReset() {
