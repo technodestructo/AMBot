@@ -9,6 +9,7 @@ var maxAll;
 var doSoftReset;
 var doSecondSoftReset;
 var doInfinity;
+var doEight;
 
 var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
@@ -47,6 +48,7 @@ function startAMBot() {
 	maxAll = setInterval(clickMaxAll, 50)
     doSecondSoftReset = setInterval(clickSecondSoftReset, 500)
 	doSoftReset = setInterval(clickSoftReset, 500)
+	doEight = setInterval(clickEight, 500)
 }
 	
 
@@ -56,6 +58,7 @@ function stopAMBot() {
 	clearInterval(doSoftReset)
 	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
+	clearInterval(doEight)
 }
 
 function clickfirstDimension() {
@@ -75,6 +78,12 @@ function clickSecondSoftReset() {
 function clickSoftReset() {
 	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {	
 		$("#softReset").click();
+	}
+}
+
+function clickEight() {
+	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+		$("#eight").click();
 	}
 }
 
