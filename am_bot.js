@@ -55,10 +55,17 @@ function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
-    if ($("#secondResetLabel").html() === "FFFAntimatter Galaxies: requires 71 Eighth Dimensions")    {
+    if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions")    {
         doSecondSoftReset = setInterval(clickSecondSoftReset, 250)
-    }
+    } else {
+	clearInterval(doSecondSoftReset)
+	}
+	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions")	{
+		clearInterval(doSoftReset)
+	} else {
 	doSoftReset = setInterval(clickSoftReset, 1000)
+	}
+	
 }
 
 function stopAMBot() {
