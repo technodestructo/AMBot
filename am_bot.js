@@ -5,10 +5,10 @@
  */
 
 var firstDimension;
-var infinity;
-var softReset;
-var secondSoftReset;
 var maxAll;
+var doSoftReset;
+var doSecondSoftReset;
+var doInfinity;
 
 var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
@@ -44,17 +44,17 @@ function initGUI() {
 function startAMBot() {
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 500)
-	softReset = setInterval(clickSoftReset, 1000)
-	secondSoftReset = setInterval(clickSecondSoftReset, 1000)
-	infinity = setInterval(clickinfinity, 1000)
+	doSoftReset = setInterval(clickSoftReset, 1000)
+	doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
+	doInfinity = setInterval(clickinfinity, 1000)
 }
 
 function stopAMBot() {
 	clearInterval(firstDimension)
 	clearInterval(maxAll)
-	clearInterval(softReset)
-	clearInterval(secondSoftReset)
-	clearInterval(infinity)
+	clearInterval(doSoftReset)
+	clearInterval(doSecondSoftReset)
+	clearInterval(doInfinity)
 }
 
 function clickfirstDimension() {
