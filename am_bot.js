@@ -44,7 +44,7 @@ function initGUI() {
 function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
 	firstDimension = setInterval(clickfirstDimension, 1000)
-	maxAll = setInterval(clickMaxAll, 250)
+	maxAll = setInterval(clickMaxAll, 50)
     doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
 	doSoftReset = setInterval(clickSoftReset, 1000)
 }
