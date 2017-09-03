@@ -81,13 +81,13 @@ function clickSoftReset() {
 }
 
 function clickThroughEight() {
-	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions") {	
 		$("#fourth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fifth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fifth Dimensions") {
 		$("#fifth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Sixth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Sixth Dimensions") {
 		$("#sixth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions") {
 		$("#seventh").click();
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
 		$("#eight").click();
