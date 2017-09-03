@@ -41,6 +41,7 @@ function initGUI() {
 	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-104px; margin-right:-63px; font-family:Helvetica; font-size:20pt;">AMBot</p>');
 }
 
+/*
 function startAMBot() {
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
@@ -48,15 +49,7 @@ function startAMBot() {
 	doSecondSoftReset = setInterval(clickSecondSoftReset, 5000)
 	doInfinity = setInterval(clickinfinity, 5000)
 }
-
-/*
-function stopAMBot() {
-	clearInterval(firstDimension)
-	clearInterval(maxAll)
-	clearInterval(doSoftReset)
-	clearInterval(doSecondSoftReset)
-	clearInterval(doInfinity)
-}*/
+*/
 
 function startAMBot() {
     firstDimension = setInterval(clickfirstDimension, 1000)
@@ -66,6 +59,14 @@ function startAMBot() {
         doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
     }
     doInfinity = setInterval(clickinfinity, 1000)
+}
+
+function stopAMBot() {
+	clearInterval(firstDimension)
+	clearInterval(maxAll)
+	clearInterval(doSoftReset)
+	clearInterval(doSecondSoftReset)
+	clearInterval(doInfinity)
 }
 
 function clickfirstDimension() {
