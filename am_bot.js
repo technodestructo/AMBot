@@ -89,7 +89,7 @@ function clickThroughEight() {
 		$("#sixth").click();
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions") {
 		$("#seventh").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 41 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 56 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") {	
 		$("#eight").click();
 	}
 }
