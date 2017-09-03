@@ -56,7 +56,7 @@ function startAMBot() {
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
     doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
-	doSoftReset = setInterval(clickSoftReset, 1000)
+	//doSoftReset = setInterval(clickSoftReset, 1000)
 }
 	
 function stopAMBot() {
@@ -75,13 +75,17 @@ function clickMaxAll() {
 	$("#maxall").click();
 }
 
+/*
 function clickSoftReset() {
 	$("#softReset").click();
 }
+*/
 
 function clickSecondSoftReset() {
 	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#secondSoftReset").click();
+	} else {
+		$("#softReset").click();
 	}
 }
 
