@@ -55,24 +55,10 @@ function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
-<<<<<<< HEAD
     doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
-	//doSoftReset = setInterval(clickSoftReset, 1000)
-}
-=======
-    if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
-        doSecondSoftReset = setInterval(clickSecondSoftReset, 250)
-    } else if ($("#secondResetLabel").html() != "Antimatter Galaxies: requires 71 Eighth Dimensions"){
-	clearInterval(doSecondSoftReset)
-	}
-	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions")	{
-		clearInterval(doSoftReset)
-	} else if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {
 	doSoftReset = setInterval(clickSoftReset, 1000)
 	}
->>>>>>> parent of e5f50d6... checking elsewhere
 	
-}
 
 function stopAMBot() {
 	clearInterval(firstDimension)
@@ -90,26 +76,20 @@ function clickMaxAll() {
 	$("#maxall").click();
 }
 
-/*
 function clickSoftReset() {
 	$("#softReset").click();
 }
-*/
 
 function clickSecondSoftReset() {
-<<<<<<< HEAD
 	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#secondSoftReset").click();
-	} else {
-		$("#softReset").click();
 	}
-=======
-	$("#secondSoftReset").click();
->>>>>>> parent of e5f50d6... checking elsewhere
 }
 
 function clickinfinity() {
-	$("#bigcrunch").click();
+	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {
+		$("#bigcrunch").click();
+	}
 }
 
 //var amBot = document.createElement('script');
