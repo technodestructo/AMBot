@@ -55,19 +55,10 @@ function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1000)
 	firstDimension = setInterval(clickfirstDimension, 1000)
 	maxAll = setInterval(clickMaxAll, 250)
-    if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
-        doSecondSoftReset = setInterval(clickSecondSoftReset, 250)
-    } else if ($("#secondResetLabel").html() != "Antimatter Galaxies: requires 71 Eighth Dimensions"){
-	clearInterval(doSecondSoftReset)
-	}
-	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions")	{
-		clearInterval(doSoftReset)
-	} else if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {
+    doSecondSoftReset = setInterval(clickSecondSoftReset, 1000)
 	doSoftReset = setInterval(clickSoftReset, 1000)
-	}
-	
 }
-
+	
 function stopAMBot() {
 	clearInterval(firstDimension)
 	clearInterval(maxAll)
@@ -89,11 +80,15 @@ function clickSoftReset() {
 }
 
 function clickSecondSoftReset() {
-	$("#secondSoftReset").click();
+	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
+		$("#secondSoftReset").click();
+	}
 }
 
 function clickinfinity() {
-	$("#bigcrunch").click();
+	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {
+		$("#bigcrunch").click();
+	}
 }
 
 //var amBot = document.createElement('script');
