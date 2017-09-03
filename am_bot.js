@@ -81,7 +81,7 @@ function clickSoftReset() {
 }
 
 function clickEight() {
-	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") && ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
 		$("#eight").click();
 	}
 }
