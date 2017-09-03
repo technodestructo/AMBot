@@ -9,7 +9,7 @@ var maxAll;
 var doSoftReset;
 var doSecondSoftReset;
 var doInfinity;
-var doEight;
+var doThroughEight;
 
 var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
@@ -45,7 +45,7 @@ function initGUI() {
 function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 500)
 	firstDimension = setInterval(clickfirstDimension, 500)
-	doEight = setInterval(clickEight, 500)
+	doThroughEight = setInterval(clickThroughEight, 500)
 	maxAll = setInterval(clickMaxAll, 50)
 	doSecondSoftReset = setInterval(clickSecondSoftReset, 500)
 	doSoftReset = setInterval(clickSoftReset, 500)
@@ -57,7 +57,7 @@ function stopAMBot() {
 	clearInterval(doSoftReset)
 	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
-	clearInterval(doEight)
+	clearInterval(doThroughEight)
 }
 
 function clickfirstDimension() {
@@ -80,8 +80,16 @@ function clickSoftReset() {
 	}
 }
 
-function clickEight() {
-	if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+function clickThroughEight() {
+	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+		$("#fourth").click();
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fifth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+		$("#fifth").click();
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Sixth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+		$("#sixth").click();
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
+		$("#seventh").click();
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {	
 		$("#eight").click();
 	}
 }
