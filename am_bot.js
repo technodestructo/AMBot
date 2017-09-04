@@ -23,7 +23,7 @@ function initGUI() {
 			  '</div>'
 	);
 	
-	$("#AMBotContainer").append('<button id="AMBotStartStop" style="height:80%; width:50px; margin:10px;">Start</button>');
+	$("#AMBotContainer").append('<button id="AMBotStartStop" style="height:80%; background-color:#c6d9ec; width:50px; margin:10px;">Start</button>');
 	
 	$("#AMBotStartStop").bind('click', function() {
 		if($(this).html() === "Start") {
@@ -38,8 +38,8 @@ function initGUI() {
 	
 	clearInterval(GUIsetup);
 	
-	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:30px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-204px; margin-right:-73px; font-family:Helvetica; font-weight:Light; font-size:20pt;">AMBot supreme</p>');
+	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:200px">');
+	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot eights</p>');
 }
 
 function startAMBot() {
