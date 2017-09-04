@@ -80,7 +80,7 @@ function clickGalaxy() {
 }
 
 function clickBoost() {
-	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
+	if ($("#resetLabel").html() != "Dimension Boost: requires 26 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#softReset").click();
 	} else if ($("#resetLabel").html() != "Dimension Boost: requires 41 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
 		$("#softReset").click();
