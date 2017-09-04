@@ -9,7 +9,8 @@ var maxAll;
 var doSoftReset;
 var doSecondSoftReset;
 var doInfinity;
-var doThroughEight;
+var doMaxes;
+var doSingles;
 
 var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
@@ -45,7 +46,8 @@ function initGUI() {
 function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1)
 	firstDimension = setInterval(clickfirstDimension, 1)
-	doThroughEight = setInterval(clickThroughEight, 1)
+	doSingles = setInterval(clickSingles, 1)
+	doMaxes = setInterval(clickMaxes, 1)
 	maxAll = setInterval(clickMaxAll, 1)
 	doSecondSoftReset = setInterval(clickSecondSoftReset, 1)
 	doSoftReset = setInterval(clickSoftReset, 1)
@@ -54,10 +56,11 @@ function startAMBot() {
 function stopAMBot() {
 	clearInterval(firstDimension)
 	clearInterval(maxAll)
+	clearInterval(doSingles)
+	clearInterval(doMaxes)
 	clearInterval(doSoftReset)
 	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
-	clearInterval(doThroughEight)
 }
 
 function clickfirstDimension() {
@@ -77,11 +80,35 @@ function clickSecondSoftReset() {
 function clickSoftReset() {
 	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#softReset").click();
-	} else if ($("#resetLabel").html() != "Dimension Boost: requires 56 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
+	} else if ($("#resetLabel").html() != "Dimension Boost: requires 41 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
 		$("#softReset").click();
 	} 
 }
 
+function clickSingles() {
+	$("#tickSpeed").click();
+	$("#eight").click();
+	$("#seventh").click();
+	$("#sixth").click();
+	$("#fifth").click();
+	$("#fourth").click();
+	$("#third").click();
+	$("#second").click();
+}
+
+function clickMaxes() {
+	$("#tickSpeedMax").click();
+	$("#eightMax").click();
+	$("#seventhMax").click();
+	$("#sixthMax").click();
+	$("#fifthMax").click();
+	$("#fourthMax").click();
+	$("#thirdMax").click();
+	$("#secondMax").click();
+	$("#firstMax").click();
+}
+
+/*
 function clickThroughEight() {
 	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions") {	
 		$("#fourth").click();
@@ -91,11 +118,11 @@ function clickThroughEight() {
 		$("#sixth").click();
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions") {
 		$("#seventh").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 41 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 56 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") {	
+	} else if ($("#resetLabel").html() === "Dimension Boost: requires 41 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") {	
 		$("#eight").click();
 	}
 }
-
+*/
 function clickinfinity() {
 	$("#bigcrunch").click();
 }
