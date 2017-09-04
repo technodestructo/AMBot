@@ -39,7 +39,7 @@ function initGUI() {
 	clearInterval(GUIsetup);
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:30px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-104px; margin-right:-73px; font-family:Helvetica; font-weight:Light; font-size:20pt;">AMBot supreme</p>');
+	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-204px; margin-right:-73px; font-family:Helvetica; font-weight:Light; font-size:20pt;">AMBot supreme</p>');
 }
 
 function startAMBot() {
