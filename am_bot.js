@@ -43,12 +43,12 @@ function initGUI() {
 }
 
 function startAMBot() {
-	doInfinity = setInterval(clickinfinity, 10)
-	firstDimension = setInterval(clickfirstDimension, 10)
-	doThroughEight = setInterval(clickThroughEight, 10)
-	maxAll = setInterval(clickMaxAll, 10)
-	doSecondSoftReset = setInterval(clickSecondSoftReset, 10)
-	doSoftReset = setInterval(clickSoftReset, 10)
+	doInfinity = setInterval(clickinfinity, 1)
+	firstDimension = setInterval(clickfirstDimension, 1)
+	doThroughEight = setInterval(clickThroughEight, 1)
+	maxAll = setInterval(clickMaxAll, 1)
+	doSecondSoftReset = setInterval(clickSecondSoftReset, 1)
+	doSoftReset = setInterval(clickSoftReset, 1)
 }
 	
 function stopAMBot() {
@@ -81,15 +81,6 @@ function clickSoftReset() {
 		$("#softReset").click();
 	} 
 }
-
-/*
-function clickSoftReset() {
-	if ($("#resetLabel").html() != "Dimension Boost: requires 71 Eighth Dimensions") {	
-		$("#softReset").click();
-	}
-}
-
-*/
 
 function clickThroughEight() {
 	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions") {	
