@@ -40,7 +40,7 @@ function initGUI() {
 	clearInterval(GUIsetup);
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:200px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot nine</p>');
+	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot eleven</p>');
 }
 
 function startAMBot() {
@@ -80,9 +80,9 @@ function clickGalaxy() {
 }
 
 function clickBoost() {
-	if ($("#resetLabel").html() != "Dimension Boost: requires 26 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
+	if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#softReset").click();
-	} else if ($("#resetLabel").html() != "Dimension Boost: requires 41 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
+	} else if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
 		$("#softReset").click();
 	} 
 }
