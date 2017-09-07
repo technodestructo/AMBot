@@ -6,8 +6,8 @@
 
 //var firstDimension;
 var maxAll;
-//var doSoftReset;
-//var doSecondSoftReset;
+var doSoftReset;
+var doSecondSoftReset;
 var doInfinity;
 var doMaxes;
 var doSingles;
@@ -49,8 +49,8 @@ function startAMBot() {
 //	firstDimension = setInterval(clickfirstDimension, 1)
 	doSingles = setInterval(clickSingles, 1)
 	doMaxes = setInterval(clickMaxes, 1)
-//	doSecondSoftReset = setInterval(clickGalaxy, 1)
-//	doSoftReset = setInterval(clickBoost, 1)
+	doSecondSoftReset = setInterval(clickGalaxy, 1)
+	doSoftReset = setInterval(clickBoost, 1)
 }
 	
 function stopAMBot() {
@@ -58,8 +58,8 @@ function stopAMBot() {
 	clearInterval(maxAll)
 	clearInterval(doSingles)
 	clearInterval(doMaxes)
-//	clearInterval(doSoftReset)
-//	clearInterval(doSecondSoftReset)
+	clearInterval(doSoftReset)
+	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
 }
 
@@ -72,7 +72,7 @@ function clickfirstDimension() {
 function clickMaxAll() {
 	$("#maxall").click();
 }
-/*
+
 function clickGalaxy() {
 	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#secondSoftReset").click();
@@ -86,7 +86,7 @@ function clickBoost() {
 		$("#softReset").click();
 	} 
 }
-*/
+
 function clickSingles() {
 	$("#first").click();
 	$("#tickSpeed").click();
