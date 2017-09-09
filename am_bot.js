@@ -16,10 +16,10 @@ var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
 document.getElementsByTagName('head')[0].appendChild(amBot);
 
-var GUIsetup = setInterval(initGUI, 1);
+var GUIsetup = setInterval(initGUI, 1000);
 
 function initGUI() {
-	$("#dimensions").append('<div id="AMBotContainer" style="background-color:#29333d; width:100px; height:100px; position:absolute; bottom:100px; left:0; z-index:200000000">' +
+	$("#body").append('<div id="AMBotContainer" style="background-color:#29333d; width:100px; height:100px; position:absolute; top:100px; left:0; z-index:200000000">' +
 
 			  '</div>'
 	);
@@ -39,8 +39,8 @@ function initGUI() {
 	
 	clearInterval(GUIsetup);
 	
-	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:200px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot eleven</p>');
+	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:100px">');
+	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-110px; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt; color:#c6d9ec;">ambot ∞</p>');
 }
 
 function startAMBot() {
@@ -65,68 +65,68 @@ function stopAMBot() {
 
 /*
 function clickfirstDimension() {
-	$("#first").click();
+	$("#first").trigger("click");
 }
 */
 
 function clickMaxAll() {
-	$("#maxall").click();
+	$("#maxall").trigger("click");
 }
 
 function clickGalaxy() {
 	if ($("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
-		$("#secondSoftReset").click();
+		$("#secondSoftReset").trigger("click");
 	}
 }
 
 function clickBoost() {
 	if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
-		$("#softReset").click();
+		$("#softReset").trigger("click");
 	} else if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
-		$("#softReset").click();
+		$("#softReset").trigger("click");
 	} 
 }
 
 function clickSingles() {
-	$("#first").click();
-	$("#tickSpeed").click();
-	$("#eight").click();
-	$("#seventh").click();
-	$("#sixth").click();
-	$("#fifth").click();
-	$("#fourth").click();
-	$("#third").click();
-	$("#second").click();
+//	$("#first").trigger("click");
+	$("#tickSpeed").trigger("click");
+/*	$("#eight").trigger("click");
+	$("#seventh").trigger("click");
+	$("#sixth").trigger("click");
+	$("#fifth").trigger("click");
+	$("#fourth").trigger("click");
+	$("#third").trigger("click");
+	$("#second").trigger("click");*/
 }
 
 function clickMaxes() {
-	$("#tickSpeedMax").click();
-	$("#eightMax").click();
-	$("#seventhMax").click();
-	$("#sixthMax").click();
-	$("#fifthMax").click();
-	$("#fourthMax").click();
-	$("#thirdMax").click();
-	$("#secondMax").click();
-	$("#firstMax").click();
+	$("#tickSpeedMax").trigger("click");
+	$("#eightMax").trigger("click");
+	$("#seventhMax").trigger("click");
+	$("#sixthMax").trigger("click");
+	$("#fifthMax").trigger("click");
+	$("#fourthMax").trigger("click");
+	$("#thirdMax").trigger("click");
+	$("#secondMax").trigger("click");
+	$("#firstMax").trigger("click");
 }
 
 function clickinfinity() {
-	$("#bigcrunch").click();
+	$("#bigcrunch").trigger("click");
 }
 
 /* it works, but not needed because of SPEED
 function clickThroughEight() {
 	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions") {	
-		$("#fourth").click();
+		$("#fourth").trigger("click");
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fifth Dimensions") {
-		$("#fifth").click();
+		$("#fifth").trigger("click");
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Sixth Dimensions") {
-		$("#sixth").click();
+		$("#sixth").trigger("click");
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions") {
-		$("#seventh").click();
+		$("#seventh").trigger("click");
 	} else if ($("#resetLabel").html() === "Dimension Boost: requires 41 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") {	
-		$("#eight").click();
+		$("#eight").trigger("click");
 	}
 }
 */
