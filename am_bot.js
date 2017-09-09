@@ -56,8 +56,8 @@ function startAMBot() {
 function stopAMBot() {
 //	clearInterval(firstDimension)
 	clearInterval(maxAll)
-	clearInterval(doSingles)
 	clearInterval(doMaxes)
+	clearInterval(doSingles)
 	clearInterval(doSoftReset)
 	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
@@ -80,9 +80,9 @@ function clickGalaxy() {
 }
 
 function clickBoost() {
-	if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
+	if ($("#resetLabel").html() != "Dimension Shift: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 		$("#softReset").click();
-	} else if ($("#resetLabel").html() != "Dimension Boost: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
+	} else if ($("#resetLabel").html() != "Dimension Shift: requires 11 Eighth Dimensions" && $("#secondResetLabel").html() === "Antimatter Galaxies: requires 131 Eighth Dimensions") {
 		$("#softReset").click();
 	} 
 }
