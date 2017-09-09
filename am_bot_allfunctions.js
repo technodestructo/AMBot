@@ -4,13 +4,21 @@
  * 09/02/17
  */
 
-//var firstDimension;
+var firstDimension;
+var secondDimension;
+var thirdDimension;
+var fourthDimension;
+var fifthDimension;
+var sixthDimension;
+var seventhDimension;
+var eighthDimension;
+var tickerSpeed;
 var maxAll;
 var doSoftReset;
 var doSecondSoftReset;
 var doInfinity;
-var doMaxes;
-var doSingles;
+//var doMaxes;
+//var doSingles;
 
 var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
@@ -41,25 +49,38 @@ function initGUI() {
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:200px">');
 	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot eleven</p>');
-	$("#dimensions").append('<div id="thisInfinity" sytle="position:absolute; right:0; top:0; bottom:0;">');
-	$("#dimensions").append('<div id="bestInfinity" sytle="position:absolute; right:0; top:0; bottom:0;">');
 }
 
 function startAMBot() {
 	doInfinity = setInterval(clickinfinity, 1)
 	maxAll = setInterval(clickMaxAll, 1)
-//	firstDimension = setInterval(clickfirstDimension, 1)
-	doSingles = setInterval(clickSingles, 1)
-	doMaxes = setInterval(clickMaxes, 1)
+	tickerSpeed = setInterval(clickTickSpeed, 1)
+	firstDimension = setInterval(clickFirstDimension, 1)
+	eighthDimension = setInterval(clickEighthDimension, 1)
+	seventhDimension = setInterval(clickSeventhDimension, 1)
+	sixthDimension = setInterval(clickSixthDimension, 1)
+	fifthDimension = setInterval(clickFifthDimension, 1)
+	fourthDimension = setInterval(clickFourthDimension, 1)
+	thirdDimension = setInterval(clickThirdDimension, 1)
+	secondDimension = setInterval(clickSecondDimension, 1)
+//	doSingles = setInterval(clickSingles, 1)
+//	doMaxes = setInterval(clickMaxes, 1)
 	doSecondSoftReset = setInterval(clickGalaxy, 1)
 	doSoftReset = setInterval(clickBoost, 1)
 }
 	
 function stopAMBot() {
-//	clearInterval(firstDimension)
+	clearInterval(firstDimension)
+	clearInterval(secondDimension)
+	clearInterval(thirdDimension)
+	clearInterval(fourthDimension)
+	clearInterval(fifthDimension)
+	clearInterval(sixthDimension)
+	clearInterval(seventhDimension)
+	clearInterval(tickerSpeed)
 	clearInterval(maxAll)
-	clearInterval(doMaxes)
-	clearInterval(doSingles)
+//	clearInterval(doMaxes)
+//	clearInterval(doSingles)
 	clearInterval(doSoftReset)
 	clearInterval(doSecondSoftReset)
 	clearInterval(doInfinity)
@@ -89,6 +110,52 @@ function clickBoost() {
 	} 
 }
 
+function clickFirstDimension() {
+	$("#first").click();
+	$("#firstMax").click();
+}
+
+function clickSecondDimension() {
+	$("#second").click();
+	$("#secondMax").click();
+}
+
+function clickThirdDimension() {
+	$("#third").click();
+	$("#thirdMax").click();
+}
+
+function clickFourthDimension() {
+	$("#fourth").click();
+	$("#fourthMax").click();
+}
+
+function clickFifthDimension() {
+	$("#fifth").click();
+	$("#fifthMax").click();
+}
+
+function clickSixthDimension() {
+	$("#sixth").click();
+	$("#sixthMax").click();
+}
+
+function clickSeventhDimension() {
+	$("#seventh").click();
+	$("#seventhMax").click();
+}
+
+function clickEighthDimension() {
+	$("#eight").click();
+	$("#eightMax").click();
+}
+
+function clickTickSpeed() {
+	$("#tickSpeed").click();
+	$("#tickSpeedMax").click();
+}
+
+/*
 function clickSingles() {
 	$("#first").click();
 	$("#tickSpeed").click();
@@ -112,7 +179,7 @@ function clickMaxes() {
 	$("#secondMax").click();
 	$("#firstMax").click();
 }
-
+*/
 function clickinfinity() {
 	$("#bigcrunch").click();
 }
