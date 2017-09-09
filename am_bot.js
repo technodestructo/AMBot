@@ -16,7 +16,7 @@ var amBot = document.createElement('script');
 amBot.src = "//code.jquery.com/jquery-1.10.2.min.js";
 document.getElementsByTagName('head')[0].appendChild(amBot);
 
-var GUIsetup = setInterval(initGUI, 1000);
+var GUIsetup = setInterval(initGUI, 1);
 
 function initGUI() {
 	$("#dimensions").append('<div id="AMBotContainer" style="background-color:#29333d; width:100px; height:100px; position:absolute; bottom:100px; left:0; z-index:200000000">' +
