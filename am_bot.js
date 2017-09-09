@@ -41,8 +41,6 @@ function initGUI() {
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:200px">');
 	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-100%; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt;">ambot eleven</p>');
-	$("#dimensions").append('<div id="thisInfinity" sytle="position:absolute; right:0; top:0; bottom:0;">');
-	$("#dimensions").append('<div id="bestInfinity" sytle="position:absolute; right:0; top:0; bottom:0;">');
 }
 
 function startAMBot() {
