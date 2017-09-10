@@ -21,7 +21,7 @@ amBot.src = "https://rawgit.com/technodestructo/AMBot/master/am_bot.js";
 document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
 
-GUI Loads in bottom left, press start and it will fulfill its purpose.
+GUI Loads in top left, press start and it will fulfill its purpose.
 
 Built with intention for Custom CSS, for use with Stylebot/Stylish:
 ```
