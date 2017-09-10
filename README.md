@@ -24,7 +24,8 @@ document.getElementsByTagName('head')[0].appendChild(amBot);
 GUI Loads in bottom left, press start and it will fulfill its purpose.
 
 Built with intention for Custom CSS, for use with Stylebot/Stylish:
-```#coinAmount {
+```
+#coinAmount {
     color: #d5bff2 ;
     font-family: consolas;
     font-size: 92px ;
