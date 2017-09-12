@@ -7,9 +7,18 @@ How to use
 -----------
 Create a bookmarklet with the following URL:
 
+Chrome:
 ```
 javascript:var amBot = document.createElement('script');amBot.src="https://rawgit.com/technodestructo/AMBot/master/am_bot.js";document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
+Firefox:
+```
+javascript: (function () { 
+    var amBot = document.createElement('script'); 
+    amBot.setAttribute('src', 'https://rawgit.com/technodestructo/AMBot/master/am_bot.js');                  
+  document.body.appendChild(amBot); 
+ }());
+ ```
 
 Or copy paste into console:
 
