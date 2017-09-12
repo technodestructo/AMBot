@@ -35,8 +35,8 @@ function initGUI() {
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:100px">');
 	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-110px; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt; color:#c6d9ec;">ambot ∞</p>');
-	$("#dimensions").prepend('<div id="thisInfinity" sytle="position:absolute">');
-	$("#dimensions").prepend('<div id="bestInfinity" sytle="position:absolute">');
+	$("#dimensions").prepend('<div id="thisInfinity">');
+	$("#dimensions").prepend('<div id="bestInfinity">');
 }
 
 function el(id) {
