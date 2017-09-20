@@ -45,10 +45,10 @@ function el(id) {
 }
 
 var $maxall = el("maxall");
-var $secondResetLabel = el("secondResetLabel");
-var $secondSoftReset = el("secondSoftReset");
-var $resetLabel = el("resetLabel");
-var $softReset = el("softReset");
+//var $secondResetLabel = el("secondResetLabel");
+//var $secondSoftReset = el("secondSoftReset");
+//var $resetLabel = el("resetLabel");
+//var $softReset = el("softReset");
 
 function startAMBot() {
 	intervals = [
@@ -56,7 +56,7 @@ function startAMBot() {
 		setInterval(clickMaxAll, 1),
 		setInterval(clickSingles, 1),
 		setInterval(clickMaxes, 1),
-		setInterval(function () {
+	/*	setInterval(function () {
 			var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
 			if(second_html === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
@@ -67,7 +67,7 @@ function startAMBot() {
 					clickBoost();
 				}
 			}
-		}, 1)
+		}, 1)*/
 	];
 }
 	
@@ -79,13 +79,13 @@ function clickMaxAll() {
 	$maxall.click();
 }
 
-function clickGalaxy() {
+/*function clickGalaxy() {
 	$secondSoftReset.click();
 }
 
 function clickBoost() {
 	$softReset.click();
-}
+}*/
 
 var $tickSpeed = el("tickSpeed");
 
@@ -114,13 +114,13 @@ var $firstMax = el("firstMax");
 function clickMaxes() {
 	$tickSpeedMax.click();
 	$eightMax.className==="storebtn" && $eightMax.click();
+	$firstMax.className==="storebtn" && $firstMax.click();
 	$seventhMax.className==="storebtn" && $seventhMax.click();
 	$sixthMax.className==="storebtn" && $sixthMax.click();
 	$fifthMax.className==="storebtn" && $fifthMax.click();
 	$fourthMax.className==="storebtn" && $fourthMax.click();
 	$thirdMax.className==="storebtn" && $thirdMax.click();
 	$secondMax.className==="storebtn" && $secondMax.click();
-	$firstMax.className==="storebtn" && $firstMax.click();
 }
 
 var $bigcrunch = el("bigcrunch");
