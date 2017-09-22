@@ -44,7 +44,7 @@ function el(id) {
 	return document.getElementById(id);
 }
 
-var $maxall = el("maxall");
+//var $maxall = el("maxall");
 //var $secondResetLabel = el("secondResetLabel");
 //var $secondSoftReset = el("secondSoftReset");
 //var $resetLabel = el("resetLabel");
@@ -102,25 +102,29 @@ function clickBoost() {
 //}*/
 
 //var $tickSpeedMax = el("tickSpeedMax");
-var $eightMax = el("eightMax");
-var $seventhMax = el("seventhMax");
-var $sixthMax = el("sixthMax");
-var $fifthMax = el("fifthMax");
-var $fourthMax = el("fourthMax");
-var $thirdMax = el("thirdMax");
-var $secondMax = el("secondMax");
 var $firstMax = el("firstMax");
+var $secondMax = el("secondMax");
+var $thirdMax = el("thirdMax");
+var $fourthMax = el("fourthMax");
+var $fifthMax = el("fifthMax");
+var $sixthMax = el("sixthMax");
+var $seventhMax = el("seventhMax");
+var $eightMax = el("eightMax");
+
 
 function clickMaxes() {
 	//$tickSpeedMax.click();
-	$eightMax.className==="storebtn" && $eightMax.click();
 	$firstMax.className==="storebtn" && $firstMax.click();
-	$seventhMax.className==="storebtn" && $seventhMax.click();
-	$sixthMax.className==="storebtn" && $sixthMax.click();
-	$fifthMax.className==="storebtn" && $fifthMax.click();
-	$fourthMax.className==="storebtn" && $fourthMax.click();
-	$thirdMax.className==="storebtn" && $thirdMax.click();
 	$secondMax.className==="storebtn" && $secondMax.click();
+	$secondMax.className==="storebtn" && $secondMax.click();
+	$thirdMax.className==="storebtn" && $thirdMax.click();
+	$thirdMax.className==="storebtn" && $thirdMax.click();
+	$fourthMax.className==="storebtn" && $fourthMax.click();
+	$fifthMax.className==="storebtn" && $fifthMax.click();
+	$sixthMax.className==="storebtn" && $sixthMax.click();
+	$seventhMax.className==="storebtn" && $seventhMax.click();
+	$eightMax.className==="storebtn" && $eightMax.click();
+	
 }
 
 var $bigcrunch = el("bigcrunch");
