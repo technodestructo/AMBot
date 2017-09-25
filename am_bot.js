@@ -13,12 +13,12 @@ document.getElementsByTagName('head')[0].appendChild(amBot);
 var GUIsetup = setInterval(initGUI, 1000);
 
 function initGUI() {
-	$("#body").append('<div id="AMBotContainer" style="background-color:#29333d; width:100px; height:100px; position:absolute; top:100px; left:0; z-index:200000000">' +
+	$("#body").append('<div id="AMBotContainer" style="background-color:#29333d; width:105px; height:40px; position:absolute; top:0px; left:0; z-index:200000000">' +
 
 			  '</div>'
 	);
 	
-	$("#AMBotContainer").append('<button id="AMBotStartStop" style="height:80%; background-color:#c6d9ec; width:50px; margin:10px;">Start</button>');
+	$("#AMBotContainer").append('<button id="AMBotStartStop" style="height:80%; background-color:#c6d9ec; width:45px;">Start</button>');
 	
 	$("#AMBotStartStop").bind('click', function() {
 		if($(this).html() === "Start") {
@@ -33,8 +33,8 @@ function initGUI() {
 	
 	clearInterval(GUIsetup);
 	
-	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; right:0; top:0; bottom:0; width:100px">');
-	$("#AMBotTitleTab").append('<p style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); margin-top:-110px; margin-right:-80px; font-family:Helvetica; font-weight:Light; font-size:20pt; color:#c6d9ec;">ambot ∞</p>');
+	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; left:0; top:0; bottom:0; width:45px">');
+	$("#AMBotTitleTab").append('<p style="position:absolute; right:0; top:0; bottom:0; font-family:Helvetica; font-weight:Light; font-size:14pt; color:#c6d9ec;">ambot&nbsp</p>');
 	$("#dimensions").prepend('<div id="thisInfinity">');
 	$("#dimensions").prepend('<div id="bestInfinity">');
 	$("#dimensions").prepend('<div id="infinitied">');
@@ -90,15 +90,7 @@ function clickBoost() {
 var $tickSpeed = el("tickSpeed");
 
 function clickSingles() {
-//	el("first").click();
 	$tickSpeed.click();
-/*	el("eight").click();
-	el("seventh").click();
-	el("sixth").click();
-	el("fifth").click();
-	el("fourth").click();
-	el("third").click();
-	el("second").click();*/
 }
 
 var $tickSpeedMax = el("tickSpeedMax");
@@ -128,23 +120,6 @@ var $bigcrunch = el("bigcrunch");
 function clickinfinity() {
 	$bigcrunch.style.display === "block" && $bigcrunch.click();
 }
-
-/* it works, but not needed because of SPEED
-function clickThroughEight() {
-	if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fourth Dimensions") {	
-		$("#fourth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Fifth Dimensions") {
-		$("#fifth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Sixth Dimensions") {
-		$("#sixth").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 11 Seventh Dimensions") {
-		$("#seventh").click();
-	} else if ($("#resetLabel").html() === "Dimension Boost: requires 41 Eighth Dimensions" || $("#resetLabel").html() === "Dimension Boost: requires 71 Eighth Dimensions") {	
-		$("#eight").click();
-	}
-}
-*/
-
 
 //var amBot = document.createElement('script');
 //amBot.src = "https://raw.github.com/technodestructo/AMBot/am_bot.js";
