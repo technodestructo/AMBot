@@ -49,7 +49,7 @@ var $secondResetLabel = el("secondResetLabel");
 var $secondSoftReset = el("secondSoftReset");
 var $resetLabel = el("resetLabel");
 var $softReset = el("softReset");
-var $replicantireset = el("replicantireset")
+
 
 function startAMBot() {
 	intervals = [
@@ -77,9 +77,10 @@ function stopAMBot() {
 	intervals.forEach(function (interval) { clearInterval(interval); });
 }
 
-function clickReplicanti(){
-	$replicantireset.click();
-}
+//var $replicantireset = el("replicantireset")
+//function clickReplicanti(){
+//	$replicantireset.click();
+//}
 
 function clickMaxAll() {
 	$maxall.click();
