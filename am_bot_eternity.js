@@ -126,7 +126,6 @@ var $bigcrunch = el("bigcrunch");
 
 function clickinfinity() {
 	$bigcrunch.style.display === "block" && $bigcrunch.click();
-	$bigcrunch.click();
 }
 
 //var amBot = document.createElement('script');
