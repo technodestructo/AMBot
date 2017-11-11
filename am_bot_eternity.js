@@ -62,7 +62,7 @@ function startAMBot() {
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
 			//if(second_html === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
-			//clickGalaxy();
+			clickGalaxy();
 			//}
 			if(reset_html >= "Dimension Boost: requires 2000 Eighth Dimensions") {
 				//if(second_html === "Antimatter Galaxies: requires 131 Eighth Dimensions" || second_html === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
