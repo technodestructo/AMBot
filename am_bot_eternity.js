@@ -57,6 +57,7 @@ function startAMBot() {
 		setInterval(clickMaxAll, 1),
 		setInterval(clickSingles, 1),
 		setInterval(clickMaxes, 1),
+		setInterval(clickInfDims, 1),
 		setInterval(clickReplicanti, 1),
 		setInterval(function () {
 			//var second_html = $secondResetLabel.innerHTML;
@@ -76,8 +77,15 @@ function stopAMBot() {
 	intervals.forEach(function (interval) { clearInterval(interval); });
 }
 
-var $replicantireset = el("replicantireset")
+var $replicantichance = el("replicantichance");
+var $replicantiinterval = el("replicantiinterval");
+var $replicantimax = el("replicantimax");
+var $replicantireset = el("replicantireset");
+
 function clickReplicanti(){
+	$replicantichance.className==="storebtn" && $replicantichance.click();
+	$replicantiinterval.className==="storebtn" && $replicantiinterval.click();
+	$replicantimax.className==="storebtn" && $replicantimax.click();
 	$replicantireset.click();
 }
 
@@ -119,6 +127,26 @@ function clickMaxes() {
 	$fourthMax.className==="storebtn" && $fourthMax.click();
 	$thirdMax.className==="storebtn" && $thirdMax.click();
 	$secondMax.className==="storebtn" && $secondMax.click();
+}
+
+var $infDim1 = el("infMax1");
+var $infDim2 = el("infMax2");
+var $infDim3 = el("infMax3");
+var $infDim4 = el("infMax4");
+var $infDim5 = el("infMax5");
+var $infDim6 = el("infMax6");
+var $infDim7 = el("infMax7");
+var $infDim8 = el("infMax8");
+
+function clickInfDims(){
+	$infDim8.className==="storebtn" && $infDim8.click();
+	$infDim7.className==="storebtn" && $infDim7.click();
+	$infDim6.className==="storebtn" && $infDim6.click();
+	$infDim5.className==="storebtn" && $infDim5.click();
+	$infDim4.className==="storebtn" && $infDim4.click();
+	$infDim3.className==="storebtn" && $infDim3.click();
+	$infDim2.className==="storebtn" && $infDim2.click();
+	$infDim1.className==="storebtn" && $infDim1.click();
 }
 
 var $bigcrunch = el("bigcrunch");
