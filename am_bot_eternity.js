@@ -77,12 +77,14 @@ function stopAMBot() {
 	intervals.forEach(function (interval) { clearInterval(interval); });
 }
 
+var $replicantiunlock = el("replicantiunlock");
 var $replicantichance = el("replicantichance");
 var $replicantiinterval = el("replicantiinterval");
 var $replicantimax = el("replicantimax");
 var $replicantireset = el("replicantireset");
 
 function clickReplicanti(){
+	$replicantiunlock.click();
 	$replicantichance.className==="storebtn" && $replicantichance.click();
 	$replicantiinterval.className==="storebtn" && $replicantiinterval.click();
 	$replicantimax.className==="storebtn" && $replicantimax.click();
@@ -116,6 +118,7 @@ var $fourthMax = el("fourthMax");
 var $thirdMax = el("thirdMax");
 var $secondMax = el("secondMax");
 var $firstMax = el("firstMax");
+var $newDim = el("newDimensionButton");
 
 function clickMaxes() {
 	$tickSpeedMax.click();
@@ -127,6 +130,7 @@ function clickMaxes() {
 	$fourthMax.className==="storebtn" && $fourthMax.click();
 	$thirdMax.className==="storebtn" && $thirdMax.click();
 	$secondMax.className==="storebtn" && $secondMax.click();
+	$newDim.click();
 }
 
 var $infDim1 = el("infMax1");
