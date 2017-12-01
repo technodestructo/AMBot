@@ -45,10 +45,10 @@ function el(id) {
 }
 
 var $maxall = el("maxall");
-//var $secondResetLabel = el("secondResetLabel");
-//var $secondSoftReset = el("secondSoftReset");
-//var $resetLabel = el("resetLabel");
-//var $softReset = el("softReset");
+var $secondResetLabel = el("secondResetLabel");
+var $secondSoftReset = el("secondSoftReset");
+var $resetLabel = el("resetLabel");
+var $softReset = el("softReset");
 
 
 function startAMBot() {
@@ -58,8 +58,8 @@ function startAMBot() {
 		setInterval(clickSingles, 1),
 		setInterval(clickMaxes, 1),
 		setInterval(clickInfDims, 1),
-		setInterval(clickReplicanti, 1),
-		/*setInterval(function () {
+		//setInterval(clickReplicanti, 1),
+		setInterval(function () {
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
 			var reset_num = reset_html.replace(/^\D+|\D+$/g, "");
@@ -69,7 +69,7 @@ function startAMBot() {
 			if(parseInt(reset_num) > 1000) {
 				clickBoost();
 			}
-		}, 1)*/
+		}, 1)
 	];
 }
 	
@@ -77,14 +77,14 @@ function stopAMBot() {
 	intervals.forEach(function (interval) { clearInterval(interval); });
 }
 
-var $replicantiunlock = el("replicantiunlock");
+//var $replicantiunlock = el("replicantiunlock");
 var $replicantichance = el("replicantichance");
 var $replicantiinterval = el("replicantiinterval");
 var $replicantimax = el("replicantimax");
 var $replicantireset = el("replicantireset");
 
 function clickReplicanti(){
-	$replicantiunlock.click();
+	//$replicantiunlock.click();
 	$replicantichance.className==="storebtn" && $replicantichance.click();
 	$replicantiinterval.className==="storebtn" && $replicantiinterval.click();
 	$replicantimax.className==="storebtn" && $replicantimax.click();
@@ -95,13 +95,13 @@ function clickMaxAll() {
 	$maxall.click();
 }
 
-//function clickGalaxy() {
-//	$secondSoftReset.click();
-//}
+function clickGalaxy() {
+	$secondSoftReset.click();
+}
 
-//function clickBoost() {
-//	$softReset.click();
-//}
+function clickBoost() {
+	$softReset.click();
+}
 
 var $tickSpeed = el("tickSpeed");
 
