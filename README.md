@@ -9,13 +9,13 @@ Create a bookmarklet with the following URL:
 
 Chrome:
 ```
-javascript:var amBot = document.createElement('script');amBot.src="https://rawgit.com/technodestructo/AMBot/master/am_bot.js";document.getElementsByTagName('head')[0].appendChild(amBot);
+javascript:var amBot = document.createElement('script');amBot.src="https://rawgit.com/technodestructo/AMBot/master/AMBot.js";document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
 Firefox:
 ```
 javascript: (function () { 
     var amBot = document.createElement('script'); 
-    amBot.setAttribute('src', 'https://rawgit.com/technodestructo/AMBot/master/am_bot.js');                  
+    amBot.setAttribute('src', 'https://rawgit.com/technodestructo/AMBot/master/AMBot.js');                  
   document.body.appendChild(amBot); 
  }());
  ```
@@ -25,7 +25,7 @@ Or copy paste into console:
 ```
 var amBot = document.createElement('script');
 
-amBot.src = "https://rawgit.com/technodestructo/AMBot/master/am_bot.js";
+amBot.src = "https://rawgit.com/technodestructo/AMBot/master/AMBot.js";
 
 document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
@@ -34,9 +34,13 @@ GUI Loads in top left, press start and it will fulfill its purpose.
 
 Built with intention for Custom CSS, for use with Stylebot/Stylish:
 ```
+#challengetimes, #stats {
+    font-size: 11pt;
+    font-weight: normal;
+}
+
 #coinAmount, #infDimMultAmount, #infPowAmount {
     color: #d5bff2 ;
-    font-family: consolas;
     font-size: 50px;
     font-weight: normal;
 }
@@ -71,26 +75,10 @@ Built with intention for Custom CSS, for use with Stylebot/Stylish:
     margin-top: 3%;
 }
 
-#challengetimes, #stats {
-    font-size: 11pt;
-    font-weight: normal;
-}
-
 #postInfinityButton {
-    background: #758ca3;
     color: #FFFFFF;
     display: initial;
     font-weight: normal;
-}
-
-#progress {
-    background-color: #625062;
-    position: relative;
-}
-
-#progressbar {
-    background-color: #d5bff2;
-    color: #a112a1;
 }
 
 #resetLabel, #secondResetLabel {
@@ -99,23 +87,30 @@ Built with intention for Custom CSS, for use with Stylebot/Stylish:
     font-weight: normal;
 }
 
+#sacrifice.storebtn, #confirmation {
+    display: inline-block;
+}
+
 #secondRow, #thirdRow, #fourthRow, #fifthRow, #sixthRow, #seventhRow, #eightRow {
     display: table-row;
     width: 100%;
 }
 
-#sacrifice.storebtn, #confirmation {
-    display: inline-block;
-}
-
 #secondSoftReset, #softReset {
     font-family: helvetica;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
 }
 
 #totalmoney, #totalresets, #galaxies, #infinitied, #bestInfinity, #thisInfinity, #totalTime {
     color: #8a99a8;
+    font-weight: normal;
+}
+
+.challengediv {
+    background: #758ca3;
+    color: #c6d9ec;
+    font-size: 11px;
     font-weight: normal;
 }
 
@@ -132,18 +127,10 @@ Built with intention for Custom CSS, for use with Stylebot/Stylish:
     font-weight: normal;
 }
 
-.challengediv {
-    background: #758ca3;
-    color: #c6d9ec;
-    font-size: 11px;
-    font-weight: normal;
-}
-
 .storebtn {
     background: #758ca3;
     border: 1px solid #c6d9ec;
     color: #c6d9ec;
-    font-size: 12px;
     font-weight: normal;
 }
 
@@ -151,13 +138,13 @@ Built with intention for Custom CSS, for use with Stylebot/Stylish:
     background: #29333d;
     border: 1px solid #47596b;
     color: #537eac;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 a {
     color: #c6d9ec;
-    font-size: 12pt;
+    font-size: 14pt;
     font-weight: normal;
 }
 
@@ -170,12 +157,12 @@ button {
     font-weight: normal;
 }
 
-span, button, body, a, div {
-    -webkit-font-smoothing: none;
-}
-
 div {
     color: #c6d9ec;
     font-weight: normal;
+}
+
+span, button, body, a, div {
+    -webkit-font-smoothing: none;
 }
 ```
