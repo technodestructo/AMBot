@@ -66,7 +66,7 @@ function startAMBot() {
 			//if(second_html === "Antimatter Galaxies: requires 71 Eighth Dimensions") {
 				clickGalaxy();
 			//}
-			if(parseInt(reset_num) > 1000) {
+			if(parseInt(reset_num) > 500) {
 				clickBoost();
 			}
 		}, 1)
