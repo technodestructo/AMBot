@@ -58,7 +58,7 @@ function startAMBot() {
 		setInterval(clickSingles, 1),
 		setInterval(clickMaxes, 1),
 		setInterval(clickInfDims, 1),
-		//setInterval(clickReplicanti, 1),
+		setInterval(clickReplicanti, 1),
 		setInterval(function () {
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
@@ -88,7 +88,7 @@ function clickReplicanti(){
 	$replicantichance.className==="storebtn" && $replicantichance.click();
 	$replicantiinterval.className==="storebtn" && $replicantiinterval.click();
 	$replicantimax.className==="storebtn" && $replicantimax.click();
-	$replicantireset.click();
+	$replicantireset.className==="storebtn" && $replicantireset.click();
 }
 
 function clickMaxAll() {
