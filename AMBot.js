@@ -59,6 +59,7 @@ function startAMBot() {
 		setInterval(clickMaxes, 1),
 		setInterval(clickInfDims, 1),
 		setInterval(clickReplicanti, 1),
+		setInterval(clickTheorem, 1),
 		setInterval(function () {
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
@@ -89,6 +90,14 @@ function clickReplicanti(){
 	$replicantiinterval.className==="storebtn" && $replicantiinterval.click();
 	$replicantimax.className==="storebtn" && $replicantimax.click();
 	$replicantireset.className==="storebtn" && $replicantireset.click();
+}
+
+var $theoremam = el("theoremam");
+var $theoremip = el("theoremip");
+
+function clickTheorem(){
+	$theoremam.className==="timetheorembtn" && $theoremam.click();
+	$theoremip.className==="timetheorembtn" && $theoremip.click();
 }
 
 function clickMaxAll() {
