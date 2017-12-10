@@ -105,11 +105,11 @@ function clickMaxAll() {
 }
 
 function clickGalaxy() {
-	$secondSoftReset.click();
+	//$secondSoftReset.click();
 }
 
 function clickBoost() {
-	$softReset.click();
+	//$softReset.click();
 }
 
 var $tickSpeed = el("tickSpeed");
